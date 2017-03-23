@@ -19,11 +19,11 @@
 
           $scope.toValue = $scope.fromValue * ($scope.toType * (1 / $scope.fromType));
           $scope.toValue = $scope.toValue.toFixed(2);
-$scope.fromValue = $scope.fromValue.toFixed(2);
+	  $scope.fromValue = $scope.fromValue.toFixed(2);
 		if($scope.fromValue==0.00)
-{
-$scope.fromValue='';
-}
+		{
+		$scope.fromValue='';
+		}
       };
   }]);
 function validateFloatKeyPress(el, evt) {
@@ -45,7 +45,7 @@ function validateFloatKeyPress(el, evt) {
     return true;
 }
 
-//thanks: http://javascript.nwbox.com/cursor_position/
+
 function getSelectionStart(o) {
 	if (o.createTextRange) {
 		var r = document.selection.createRange().duplicate()
